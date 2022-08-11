@@ -1,89 +1,181 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-size: 16px;
-  }
-  
-  body {
-    font-family: 'Open Sans', sans-serif;
-  }
-  
-  .label {
-    border: 2px solid black;
-    width: 270px;
-    margin: 20px auto;
-    padding: 0 7px;
-  }
-  
-  header h1 {
-    text-align: center;
-    margin: -4px 0;
-    letter-spacing: 0.15px
-  }
-  
-  p {
+    box-sizing: inherit;
     margin: 0;
-  }
-  
-  .divider {
-    border-bottom: 1px solid #888989;
-    margin: 2px 0;
-    clear: right;
-  }
-  
-  .bold {
-    font-weight: 800;
-  }
-  
-  .right {
-    float: right;
-  }
-  
-  .lg {
-    height: 10px;
-  }
-  
-  .lg, .md {
-    background-color: black;
-    border: 0;
-  }
-  
-  .md {
-    height: 5px;
-  }
-  
-  .sm-text {
-    font-size: 0.85rem;
-  }
-  
-  .calories-info h1 {
-    margin: -5px -2px;
-    overflow: hidden;
-  }
-  
-  .calories-info span {
-    font-size: 1.2em;
-    margin-top: -7px;
-  }
-  
-  .indent {
-    margin-left: 1em;
-  }
-  
-  .dbl-indent {
-    margin-left: 2em;
-  }
-  
-  .daily-value p:not(.no-divider) {
-    border-bottom: 1px solid #888989;
-  }
-  
+    padding: 0;
+}
 
-.note {
-    font-size: 0.6rem;
-    margin: 5px 0;
-    padding: 0 8px;
-    text-indent: -8px;
-  }
+html {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60%;
+    color: white;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: block;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #212121;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+    z-index: 10;
+}
+
+section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 2rem;
+}
+
+li {
+    display: list-item;
+    text-align: center;
+}
+
+li a {
+    display: block;
+    font-size: 2.2rem;
+    padding: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover {
+    background-color: white;
+    color: black;
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #5a5653;
+}
+
+.chip{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 30%;
+    background-color: white;
+    border-radius: 10%;
+}
+
+.welcome-wraper {
+    font-size: 4rem;
+    position: absolute;
+    top: 36%;
+    left: 13%;
+    color: black;
+}
+
+.welcome-wraper p {
+    width: 150%;
+    font-size: 3.5rem;
+    position: absolute;
+    top: 90%;
+    color: black;
+}
+
+.pin {
+    position: absolute;
+    top: -12%;
+    left: 7%;
+    width: 15px;
+    height: 50px;
+    background-color: black;
+    background: linear-gradient(
+        360deg,
+        black 0%,
+        black 30%,
+        grey 31%,
+        grey 40%,
+        black 40%
+    );
+}
+
+.pin:nth-of-type(2) {
+    left: 20%;
+}
+.pin:nth-of-type(3) {
+    left: 32%;
+}
+.pin:nth-of-type(4) {
+    left: 44%;
+}
+.pin:nth-of-type(5) {
+    left: 55%;
+}
+.pin:nth-of-type(6) {
+    left: 66%;
+}
+.pin:nth-of-type(7) {
+    left: 77%;
+}
+.pin:nth-of-type(8) {
+    left: 88%;
+}
+
+.myInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #242426;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+}
+
+.profile-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+}
+
+hr {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 10px;
+    background-color: black;
+}
+
+.footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background: green;
+    border-top: 4px solid yellow;
+}
