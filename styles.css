@@ -45,7 +45,7 @@ li {
 
 li a {
     display: block;
-    font-size: 2.2rem;
+    font-size: 250%;
     padding: 2rem;
 }
 
@@ -69,68 +69,383 @@ li a:hover {
     background-color: #5a5653;
 }
 
-.chip{
+.chip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     width: 300px;
     height: 300px;
-    top: 30%;
-    background-color: white;
+    top: 33%;
+    background: linear-gradient(-45deg,
+            lightgrey 45%,
+            white 50%,
+            lightgrey 60%);
     border-radius: 10%;
+    z-index: 3;
+    animation: chipAnimation 1s ease-in 1;
+}
+
+
+@keyframes chipAnimation {
+    0%{
+        opacity: 0%;
+    }
+    10%{
+        opacity: 10%;
+    }
+    20%{
+        opacity: 20%;
+    }
+    30%{
+        opacity: 30%;
+    }
+    40%{
+        opacity: 40%;
+    }
+    50%{
+        opacity: 50%;
+    }
+    60%{
+        opacity: 60%;
+    }
+    70%{
+        opacity: 70%;
+    }
+    80%{
+        opacity: 80%;
+    }
+    90%{
+        opacity: 90%;
+    }
+    100%{
+        opacity: 100%;
+    }
 }
 
 .welcome-wraper {
-    font-size: 4rem;
-    position: absolute;
-    top: 36%;
-    left: 13%;
+    font-size: 300%;
+    text-align: center;
     color: black;
 }
 
 .welcome-wraper p {
-    width: 150%;
-    font-size: 3.5rem;
-    position: absolute;
-    top: 90%;
+    font-size: 250%rem;
     color: black;
 }
 
 .pin {
     position: absolute;
     top: -12%;
-    left: 7%;
+    left: 8%;
     width: 15px;
     height: 50px;
     background-color: black;
-    background: linear-gradient(
-        360deg,
-        black 0%,
-        black 30%,
-        grey 31%,
-        grey 40%,
-        black 40%
-    );
+    background: linear-gradient(360deg,
+            black 0%,
+            black 30%,
+            grey 31%,
+            grey 40%,
+            black 40%);
+    
 }
 
 .pin:nth-of-type(2) {
     left: 20%;
 }
+
 .pin:nth-of-type(3) {
     left: 32%;
 }
+
 .pin:nth-of-type(4) {
     left: 44%;
 }
+
 .pin:nth-of-type(5) {
     left: 55%;
 }
+
 .pin:nth-of-type(6) {
     left: 66%;
 }
+
 .pin:nth-of-type(7) {
     left: 77%;
 }
+
 .pin:nth-of-type(8) {
     left: 88%;
+}
+
+.pin:nth-of-type(9) {
+    transform: rotate(90deg);
+    top: 5%;
+    left: 101%;
+}
+
+.pin:nth-of-type(10) {
+    transform: rotate(90deg);
+    top: 14%;
+    left: 101%;
+}
+
+.pin:nth-of-type(11) {
+    transform: rotate(90deg);
+    top: 24.5%;
+    left: 101%;
+}
+
+.pin:nth-of-type(12) {
+    transform: rotate(90deg);
+    top: 35%;
+    left: 101%;
+}
+
+.pin:nth-of-type(13) {
+    transform: rotate(90deg);
+    top: 46%;
+    left: 101%;
+}
+
+.pin:nth-of-type(14) {
+    transform: rotate(90deg);
+    top: 57%;
+    left: 101%;
+}
+
+.pin:nth-of-type(15) {
+    transform: rotate(90deg);
+    top: 68%;
+    left: 101%;
+}
+
+.pin:nth-of-type(16) {
+    transform: rotate(90deg);
+    top: 79%;
+    left: 101%;
+}
+.pin:nth-of-type(17) {
+    transform: rotate(180deg);
+    top: 95%;
+    left: 88%;
+}
+.pin:nth-of-type(18) {
+    transform: rotate(180deg);
+    top: 95%;
+    left: 77%;
+}
+.pin:nth-of-type(19) {
+    transform: rotate(180deg);
+    top: 95%;
+    left: 66%;
+}
+.pin:nth-of-type(20) {
+    transform: rotate(180deg);
+    top: 95%;
+    left: 55%;
+}
+.pin:nth-of-type(21) {
+    transform: rotate(180deg);
+    top: 95%;
+    left: 44%;
+}
+.pin:nth-of-type(22) {
+    transform: rotate(180deg);
+    top: 95%;
+    left: 32%;
+}
+.pin:nth-of-type(23) {
+    transform: rotate(180deg);
+    top: 95%;
+    left: 20%;
+}
+.pin:nth-of-type(24) {
+    transform: rotate(180deg);
+    top: 95%;
+    left: 8%;
+}
+.pin:nth-of-type(25) {
+    transform: rotate(270deg);
+    top: 79%;
+    left: -6%;
+}
+.pin:nth-of-type(26) {
+    transform: rotate(270deg);
+    top: 68%;
+    left: -6%;
+}
+.pin:nth-of-type(27) {
+    transform: rotate(270deg);
+    top: 57%;
+    left: -6%;
+}
+.pin:nth-of-type(28) {
+    transform: rotate(270deg);
+    top: 46%;
+    left: -6%;
+}
+.pin:nth-of-type(29) {
+    transform: rotate(270deg);
+    top: 35%;
+    left: -6%;
+}
+.pin:nth-of-type(30) {
+    transform: rotate(270deg);
+    top: 24.5%;
+    left: -6%;
+}
+.pin:nth-of-type(31) {
+    transform: rotate(270deg);
+    top: 14%;
+    left: -6%;
+}
+.pin:nth-of-type(32) {
+    transform: rotate(270deg);
+    top: 5%;
+    left: -6%;
+}
+
+.wire {
+    height: 80px;
+    width: 5px;
+    background: linear-gradient(
+        -45deg,
+        black ,
+        #397deb 0%,
+        black
+    );
+    background-color: #397deb ;
+    position: absolute;
+    animation: wireAnimation 0.5s ease-in-out infinite;
+}
+
+.conection {
+    height: 30px;
+    width: 30px;
+    background-color: #397deb;
+    border-radius: 50%;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -1150%;
+    top:-175%;
+    background: linear-gradient(
+        -45deg,
+        black ,
+        #397deb 0%,
+        black
+    );
+    animation: conectionAnimation 0.5s ease-in-out infinite;
+}
+
+@keyframes conectionAnimation {
+    0%{
+        background: linear-gradient(
+        -45deg,
+        black ,
+        #397deb 0%,
+        black
+    );
+    }
+    25%{
+        background: linear-gradient(
+        -45deg,
+        black ,
+        #397deb 50%,
+        black
+    );
+    }
+    50%{
+        background: linear-gradient(
+        -45deg,
+        black ,
+        #397deb 100%,
+        black
+    );
+    }
+    75%{
+        background: linear-gradient(
+        -45deg,
+        black ,
+        #397deb 500%,
+        black
+    );
+    }
+    100%{
+        background: linear-gradient(
+            -45deg,
+            black ,
+            #397deb 0%,
+            black
+        );
+    }
+}
+
+
+.innercon {
+    height: 20px;
+    width: 20px;
+    background-color: #5a5653;
+    border-radius: 50%;
+}
+
+.wire:nth-of-type(1) {
+    top: -150%;
+    left: 35%;
+    z-index: -1;
+}
+
+.wire:nth-of-type(2) {
+    height: 150px;
+    transform: rotate(270deg);
+    top: -295%;
+    left: -460%;
+    z-index: -2;
+}
+
+@keyframes wireAnimation {
+    0%{
+        background: linear-gradient(
+        -45deg,
+        black ,
+        #397deb 0%,
+        black
+    );
+    }
+    25%{
+        background: linear-gradient(
+        -45deg,
+        black ,
+        #397deb 50%,
+        black
+    );
+    }
+    50%{
+        background: linear-gradient(
+        -45deg,
+        black ,
+        #397deb 100%,
+        black
+    );
+    }
+    75%{
+        background: linear-gradient(
+        -45deg,
+        black ,
+        #397deb 500%,
+        black
+    );
+    }
+    100%{
+        background: linear-gradient(
+            -45deg,
+            black ,
+            #397deb 0%,
+            black
+        );
+    }
 }
 
 .myInfo {
