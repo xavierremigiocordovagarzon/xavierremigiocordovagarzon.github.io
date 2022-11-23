@@ -1,33 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>CHIQUITOS S.A.</title>
-    <link rel="stylesheet" href="./styles.css" />
-    <script src="./script.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script type="text/javascript" src="./Registers.js"></script>
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
 </head>
 
 <body>
-    <h1><img class="logo" src="logoChiquitos.png"></h1>
-    <p>Bienvenido a siempre seguro nunca inseguro</p>
-    <form onsubmit="validar()">
-        <fieldset>
-            <label>USUARIO <input id="name" type="text" name="first-name" required oninput="checkPass()" /></label>
-            <label>CONTRASEÑA
-                <input id="pass" type="password" name="last-name" required minlength="12" oninput="checkPass()" />
-                <input id="min" class="inline" type="checkbox"  onclick="return false;">Minuscula
-                <input id="may" class="inline" type="checkbox"  onclick="return false;">Mayuscula
-                <input id="num" class="inline" type="checkbox"  onclick="return false;">Numero
-                <input id="sim" class="inline" type="checkbox"  onclick="return false;">Simbolo
-            </label>
-            <label id="security">INSEGURA</label>
-        </fieldset>
-        <input type="button" value="GUIA"
-            onclick="swal('EJEMPLOS DE CONTRASEÑAS SEGURAS', 'D8Vt47&vtc8F\nv^o1mJ%86qaG\n72V6Zc3Pev#G\nkG6Q65*7jc5J')">
-        <input type="submit" value="REGISTRARSE" />
-    </form>
+    <nav id="navbar">
+        <ul class="ul-navbar">
+            <li><a href="#welcome-section">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="welcome-section">
+        <h1>Hello I am Xavier</h1>
+        <p>A FullStack Developer</p>
+    </section>
+    <section id="projects">
+        <h1>Some of My Work</h1>
+        <div class="projects-container">
+            <a href="https://codepen.io/xavierremigiocordovagarzon/pen/QWxMgLm" target="_blank" class="project project-tile">
+                <img src="./imgs/VisualizeData.jpg" alt="Data Visualization" class="project-image">
+                <p class="project-title">Data Visualization</p>
+            </a>
+            <a href="https://codepen.io/xavierremigiocordovagarzon/pen/KKeaoJa" target="_blank" class="project project-tile">
+                <img src="./imgs/25+5Clock.jpg" alt="25 + 5 Clock" class="project-image">
+                <p class="project-title">25 + 5 Clock</p>
+            </a>
+            <a href="https://codepen.io/xavierremigiocordovagarzon/pen/mdKRxKY" target="_blank" class="project project-tile">
+                <img src="./imgs/JavaScriptCalculator.jpg" alt="JavaScript Calculator" class="project-image">
+                <p class="project-title">JavaScript Calculator</p>
+            </a>
+            <a href="https://replit.com/@RemiCordova/boilerplate-project-exercisetracker#index.js" target="_blank" class="project project-tile">
+                <img src="./imgs/ExerciseTracker.jpg" alt="Exercise Tracker" class="project-image">
+                <p class="project-title">Exercise Tracker</p>
+            </a>
+            <a href="https://replit.com/@RemiCordova/boilerplate-project-urlshortener#index.js" target="_blank" class="project project-tile">
+                <img src="./imgs/URLShortener.jpg" alt="URL Shortener" class="project-image">
+                <p class="project-title">URL Shortener</p>
+            </a>
+            <a href="https://replit.com/@RemiCordova/boilerplate-project-filemetadata#index.js" target="_blank" class="project project-tile">
+                <img src="./imgs/FileMetaData.jpg" alt="File MetaData" class="project-image">
+                <p class="project-title">File MetaData</p>
+            </a>
+        </div>
+    </section>
+    <section id="contact">
+        <h1>Contact Me...</h1>
+        <div class="contacts-container">
+            <a href="https://wa.me/593992661132" target="_blank" class="contact-details">
+                <em class="fab fa-whatsapp"></em> WhatsApp
+            </a>
+            <a href="mailto:xaviercordova2001@outlook.com" class="contact-details">
+                <em class="fas fa-at"></em> Outlook
+            </a>
+            <a href="https://www.instagram.com/remicordova/" target="_blank" class="contact-details">
+                <em class="fab fa-instagram"></em> Instagram
+            </a>
+            <a href="https://twitter.com/XavierC65033655" target="_blank" class="contact-details">
+                <em class="fab fa-twitter"></em> Twitter
+            </a>
+            <a href="https://github.com/xavierremigiocordovagarzon" target="_blank" class="contact-details">
+                <em class="fab fa-github"></em> Github
+            </a>
+            <a href="https://www.linkedin.com/in/xavier-remigio-cordova-garzon-115a69247/" target="_blank" class="contact-details">
+                <em class="fab fa-linkedin"></em> LinkedIn
+            </a>
+        </div>
+    </section>
+    <footer>
+        <p><em class="far fa-copyright"></em> Xavier Cordova 2022</p>
+    </footer>
 </body>
 
 </html>
