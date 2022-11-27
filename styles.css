@@ -33,9 +33,21 @@ html {
     }
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 600px) {
     html {
         font-size: 115%;
+    }
+}
+
+@media only screen and (max-device-width : 319px) {
+    html {
+        font-size: 100%;
+    }
+}
+
+@media only screen and (min-device-width : 601px) and (max-device-width: 1000px) {
+    html {
+        font-size: 100%;
     }
 }
 
@@ -136,7 +148,16 @@ img {
     margin-bottom: 6rem;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 600px) {
+    .projects-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1em;
+        grid-row-gap: 100px;
+    }
+}
+
+@media only screen and (max-device-width : 319px) {
     .projects-container {
         display: grid;
         grid-template-columns: 1fr;
@@ -172,7 +193,13 @@ img {
     padding: 2rem 0.5rem;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 600px) {
+    .project-title {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-device-width : 319px) {
     .project-title {
         font-size: 3rem;
     }
