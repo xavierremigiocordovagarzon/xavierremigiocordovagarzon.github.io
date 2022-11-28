@@ -164,19 +164,19 @@ img {
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 600px) {
     .logo {
-        width: 50%;
+        width: 90%;
     }
 }
 
 @media only screen and (max-device-width : 319px) {
     .logo {
-        font-size: 40%;
+        width: 100%;
     }
 }
 
 @media only screen and (min-device-width : 601px) and (max-device-width: 1000px) {
     .logo {
-        font-size: 40%;
+        width: 50%;
     }
 }
 
